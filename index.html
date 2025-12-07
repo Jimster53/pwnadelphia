@@ -194,6 +194,80 @@
         and <strong>understand</strong> how to fix them in the real world.
       </p>
     </section>
+    
+    <section class="panel" id="mission-bank">
+  <h2 class="panel-title">Mission: Market Street Bank</h2>
+  <p class="panel-text">
+    Market Street Bank still runs on a web stack old enough to remember dial-up.
+    Tickets got postponed, audits got ignored, and the same brittle login page
+    has been online for years.
+  </p>
+  <ul class="panel-text">
+    <li><strong>Difficulty:</strong> Intermediate</li>
+    <li><strong>Focus:</strong> Web app behavior, authentication, input handling</li>
+    <li><strong>Goal:</strong> Map the login flow, identify risky inputs or logic,
+      and document how an attacker could abuse them.</li>
+    <li><strong>Win condition:</strong> Write a short findings note explaining
+      one realistic attack path <em>and</em> how you’d fix it.</li>
+  </ul>
+</section>
+
+<section class="panel" id="mission-bar">
+  <h2 class="panel-title">Mission: Broad &amp; 0day Bar</h2>
+  <p class="panel-text">
+    The Broad &amp; 0day is a neon dive where the Wi-Fi password has been written
+    on the wall for years. Guests, staff, and randos all share the same network,
+    and no one remembers who set it up.
+  </p>
+  <ul class="panel-text">
+    <li><strong>Difficulty:</strong> Beginner–Intermediate</li>
+    <li><strong>Focus:</strong> Network discovery, open services,
+      basic segmentation concepts</li>
+    <li><strong>Goal:</strong> Enumerate what’s visible on the bar’s network and
+      identify which devices or services should never have been exposed.</li>
+    <li><strong>Win condition:</strong> Create a simple “before/after” network sketch:
+      what’s exposed now vs. how you’d lock it down.</li>
+  </ul>
+</section>
+
+<section class="panel" id="mission-motel">
+  <h2 class="panel-title">Mission: Motel 1337</h2>
+  <p class="panel-text">
+    Motel 1337 runs a “custom” booking system a cousin built a decade ago and then
+    abandoned. Passwords live too close to plain text, and every endpoint feels
+    like a confession.
+  </p>
+  <ul class="panel-text">
+    <li><strong>Difficulty:</strong> Intermediate–Advanced</li>
+    <li><strong>Focus:</strong> Authentication, access control, insecure data storage</li>
+    <li><strong>Goal:</strong> Trace how users log in, where their data goes,
+      and which checks are missing or weak.</li>
+    <li><strong>Win condition:</strong> Identify at least one way accounts could be
+      accessed or abused improperly, and write how you’d redesign it safely.</li>
+  </ul>
+</section>
+
+<section class="panel" id="mission-cms">
+  <h2 class="panel-title">Mission: City Hall CMS</h2>
+  <p class="panel-text">
+    The official PWNadelphia site looks respectable on the surface. Underneath,
+    it’s stacked with abandoned plugins, risky themes, and years of
+    “we’ll clean this up later.”
+  </p>
+  <ul class="panel-text">
+    <li><strong>Difficulty:</strong> Intermediate</li>
+    <li><strong>Focus:</strong> CMS hardening, misconfiguration,
+      attack surface mapping</li>
+    <li><strong>Goal:</strong> Build an inventory of the CMS: plugins, themes,
+      admin paths, and anything that increases the city’s attack surface.</li>
+    <li><strong>Win condition:</strong> Produce a prioritized lockdown checklist
+      of the top 3–5 changes you’d make first.</li>
+  </ul>
+</section>
+
+<!-- keep your next section starting here -->
+<section class="panel" id="zones">
+    
 
     <section class="panel" id="zones">
       <h2 class="panel-title">City Zones (Planned Targets)</h2>
